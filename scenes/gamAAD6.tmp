@@ -494,7 +494,7 @@ layer_1/tile_data = PackedInt32Array(196610, 0, 0, 327680, 0, 0, 393215, 0, 0, 1
 position = Vector2(22, 47)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(19, -14)
+position = Vector2(0, -7)
 zoom = Vector2(4, 4)
 limit_left = -200
 limit_top = -260
@@ -503,6 +503,8 @@ limit_bottom = 170
 limit_smoothed = true
 position_smoothing_enabled = true
 position_smoothing_speed = 3.0
+
+[node name="PauseMenu" parent="Player/Camera2D" instance=ExtResource("10_82kpb")]
 
 [node name="Killzone" parent="." instance=ExtResource("5_1vlce")]
 
@@ -597,6 +599,3 @@ theme_override_colors/font_color = Color(0.0117647, 0.14902, 0.34902, 1)
 theme_override_fonts/font = ExtResource("7_vw073")
 theme_override_font_sizes/font_size = 8
 text = "Almost there"
-
-[node name="PauseMenu" parent="." instance=ExtResource("10_82kpb")]
-top_level = true
